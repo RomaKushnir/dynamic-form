@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="input-item col-xs-12 col-md-6">
+                    <form class="b-form" action="">
+                        <select name="" id="chose-country">
+					<option value="belgium" selected>Belgium</option>
+					<option value="ukraine">Ukraine</option>
+				    </select>
+                        <input id="adress" type="text" placeholder="ZIP code, Address">
+                    </form>
+                </div>
+                <div class="input-item col-xs-12 col-md-6">
+                    <form class="b-form" action="">
+                        <select name="" id="chose-country">
+					<option value="belgium" selected>Belgium</option>
+					<option value="ukraine">Ukraine</option>
+				    </select>
+                        <input id="adress" type="text" placeholder="ZIP code, Address">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container insert-block">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3">
+                   <form class="b-trigger" action="">
+                    <input type="checkbox" class="trigger-input" id="trigger-btn">
+                    <label class="slider" for="trigger-btn"></label>
+                    </form>
+                </div>
+                <div class="input-wrapper-parcel col-lg-10 col-md-10 col-sm-10 col-xs-9">
+                   <form class="form-parcel" action="">
+                    <div class="b-measure">
+                        <label for="weight">Weight:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Kg</div>
+                           <input id="weight" type="text">
+                        </div>
+                    </div>
+                    <div class="b-measure">
+                        <label for="weight">Length:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Cm</div>
+                            <input id="length" type="text">
+                        </div>
+                    </div>
+                    <div class="b-measure">
+                        <label for="weight">Width:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Cm</div>
+                            <input id="width" type="text">
+                        </div>
+                    </div>
+                    <div class="b-measure">
+                        <label for="weight">Height:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Cm</div>
+                            <input id="height" type="text">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="input-wrapper-pallet">
+                   <form class="form-pallet" action="">
+                    <div class="b-measure">
+                        <label for="weight">Number of pallets:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Pcs</div>
+                            <input id="number" type="text">
+                        </div>
+                    </div>
+                    <div class="b-measure">
+                        <label for="weight">Height:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Cm</div>
+                            <input id="height" type="text">
+                        </div>
+                    </div>
+                    <div class="b-measure">
+                        <label for="weight">Weight for pallets:</label>
+                        <div class="input-measure">
+                           <div class="measure-points">Kg</div>
+                            <input id="weight-pallet" type="text">
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="manage-btn">
+            <div class="btn-wrap">
+                <button id="remove" class="btn btn-primary">- Remove</button>
+                <button id="add" class="btn btn-primary">+ Add parcel or pallet</button>
+            </div>
+            <button id="submit" class="btn btn-danger">Quote & Book</button>
+        </div>
+    </div>
+</body>
+</html>

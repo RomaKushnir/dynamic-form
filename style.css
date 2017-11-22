@@ -1,0 +1,166 @@
+.wrapper {
+	background: linear-gradient(#0c92da, #2874a8) no-repeat;
+	padding: 50px;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1280px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 30px 100px;
+    margin-bottom: 30px;
+}
+
+.container:first-of-type {
+    margin-bottom: -30px;
+}
+
+.input-item {
+
+}
+
+.b-form {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#chose-country {
+	font-size: 1.7rem;
+	color: #fff;
+	background-color: #00aad6;
+	width: 135px;
+	padding: 7px 7px 8px 7px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#adress {
+	margin-left: -6px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid gray;
+	width: 300px;
+	padding: 8px;
+}
+
+.input-wrapper-pallet {
+    display: none;
+
+}
+
+.input-wrapper-parcel {
+}
+
+.b-trigger {
+    margin-top: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 100px;
+    border: 1px solid black;
+	border-radius: 5px;
+    height: 30px;
+
+}
+
+.slider {
+	position: relative;
+    left: 70px;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.slider::before {
+	position: absolute;
+	content: "PARCEL";
+	font-weight: 100;
+	left: -75px;
+	top: 0;
+	padding: 4px 4px 4px 12px;
+	width: 75px;
+	height: 30px;
+	color: #fff;
+	background-color: #307cb7;
+/*	float: left;*/
+}
+
+.slider::after {
+	position: absolute;
+	content: "PALLET";
+	color: #fff;
+	font-weight: 100;
+	left: 30px;
+	top: 0;
+	padding: 4px 4px 4px 10px;
+	width: 75px;
+	height: 30px;
+	background-color: #307cb7;
+/*	float: right;*/
+}
+
+.trigger-input {
+    display: none;
+}
+
+.trigger-input:checked ~ .slider {
+	left: -5px;
+}
+
+
+.form-parcel {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.form-pallet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.b-measure{
+	width: 130px;	
+    display: inline-block
+}
+
+.b-measure label {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.b-measure input {
+	border-radius: 5px;
+	height: 30px;
+	width: 130px;
+	border: 1px solid lightgray;
+    outline: none;
+    padding-left: 5px;
+}
+
+.input-measure {
+	position: relative;
+}
+
+.input-measure .measure-points {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 30px;
+	width: 30px;
+	background-color: lightgray;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 4px 5px;
+}
+
+.manage-btn {
+    max-width: 1280px;
+	display: flex;
+	justify-content: space-between;
+	margin: 30px 0;
+}
